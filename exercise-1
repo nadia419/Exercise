@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+    <meta name="description" contant="prof marco’s homework">
+    <link rel="icon" type="image/png" size="32x32" href="image/queen.png">
+</head>
+
+<body>
+    <h2>Exercise of HTML</h2>
+    <br>
+    <p>Dopo avere accerchiato e distrutto un'intera armata austriaca durante la<a href="https://it.wikipedia.org/wiki/Campagna_di_Ulma">campagna di Ulma</a> , le forze francesi occuparono<a href="https://en.wikipedia.org/wiki/Vienna">Vienna</a>  l'11 novembre 1805. Gli austriaci riuscirono a evitare ulteriori combattimenti fino all'arrivo dei rinforzi russi. Napoleone necessitava di una vittoria decisiva e, per attirare gli avversari sul terreno di battaglia da lui scelto nei pressi di Austerlitz, finse di trovarsi in difficoltà facendo ripiegare le sue avanguardie e indebolendo deliberatamente il suo fianco destro. I generali austro-russi concentrarono la maggior parte delle forze contro la destra francese, sguarnendo pericolosamente il centro del loro fronte, che subì il violento attacco di sorpresa del IV Corpo del<a href="https://it.wikipedia.org/wiki/Nicolas_Jean-de-Dieu_Soult">Maresciallo Nicolas Jean-de-Dieu Soult</a>. Dopo il crollo del centro nemico, i francesi poterono sbaragliare entrambi i fianchi dello schieramento nemico e costrinsero gli alleati ad una fuga
+disordinata, catturando migliaia di prigionieri.</p>
+    
+</body>
+</html>
