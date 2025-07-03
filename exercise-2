@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework about table</title>
+    <meta name="description" content="prof marco’s homework">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/queen.png">
+    <style>
+
+        h1{
+            text-align: center;
+        }
+
+        table{
+            width: 65%;
+            border-color: gray;
+            border-collapse: collapse;
+        }
+
+        th{
+            background-color:#d59c0b ;
+        }
+
+        tr:nth-child(even) {
+            background-color:#e7d989
+        }
+
+        tr:nth-child(odd) {
+            background-color:#f8f8ff
+        }
+
+        .num{
+            text-align: center;
+        }
+
+        th{
+            color: white;
+            width: 40px;
+        }
+
+        div{
+           position: absolute;
+           right: -20px;
+           width: 80%;
+           height: 120px;
+         }
+       
+        
+        
+    </style>
+
+</head>
+<body>
+    
+ <h1>Hotel Prices By Region</h1> 
+   <div>
+    <table border="2">
+            
+                <tr>
+                   <th>Hotel</th> <th> Region</th> <th> Stars</th> <th>Price of rooms</th>
+                </tr>
+                
+                <tr>
+                    <td>Aristeo</td> <td>Emillia Romagna</td> <td class="num">1</td> <td class="num">79,00$</td>
+                </tr>
+                
+                 <tr>
+                    <td>L'essenza</td> <td>Lombardia</td> <td class="num">2</td> <td class="num">87,00$</td>
+                </tr>
+
+                 <tr>
+                    <td>Sara</td> <td>Lombardia</td> <td class="num">4</td> <td class="num">142,00$</td>
+                </tr>
+
+                <tr>
+                    <td>Grand Hotel</td> <td>Emillia Romagna</td> <td class="num">5</td> <td class="num">280,00$</td>
+                </tr>
+                
+                 <tr>
+                    <td>Capriccio</td> <td>Calabria</td> <td class="num">4</td> <td class="num">155,00$</td>
+                </tr>
+
+                 <tr>
+                    <td>Ambassador</td> <td>Calabria</td> <td class="num">2</td> <td class="num">84,00$</td>
+                </tr>
+
+                 <tr>
+                    <td>Aster</td> <td>Emillia Romagna</td> <td class="num">3</td> <td class="num">134,00$</td>
+                </tr>
+
+                <tr>
+                    <td>Jazz</td> <td>Sardegna</td> <td class="num">3</td> <td class="num">134,00$</td>
+                </tr>
+           
+    </table>
+</div>
+</body>
+</html>
