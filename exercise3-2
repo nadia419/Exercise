@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework about font family</title>
+
+    <style>
+          @font-face {
+            font-family:"georgiai";
+            src: url("font/georgiai.ttf");
+        }
+        @font-face {
+            font-family:"georgiab" ;
+            src: url("font/georgiab.ttf");
+        }
+        @font-face {
+            font-family: "Roboto-Lightitalic";
+            src: url("font/Roboto-LightItalic.ttf");
+        }
+        h1{
+            font-family: "georgiab";
+            
+        }
+
+        p{
+             font-family:"Roboto-lightitalic";
+            
+        
+        }
+
+        b{
+           font-size:12pt;
+           
+        }
+
+       
+    </style>
+</head>
+<body>
+  <p><b>"Oggi la mia mamma, la 'nonna Viola' avrebbe compiuto 90 anni"</b>. A scriverlo è <b>Lorenzo Jovanotti</b>, che sui social ha deciso di ricordarla pubblicando alcuni scatti in bianco e nero al fianco della piccola Teresa, primogenita del cantante.</p>
+
+<h1>Gli auguri di Lorenzo Jovanotti per la madre Viola</h1>
+<p>Oggi, 21 luglio, la madre di Jovanotti, Viola, avrebbe compiuto 90 anni. Per celebrare la ricorrenza speciale, il cantante ha deciso di condividere con i suoi fan due fotografie in bianco e nero, che ritraggono la figlia Teresa insieme alla nonna. "Uno di quei giorni che andavamo a trovarla e lei le insegnava qualcosa, le raccontava qualche storia dei tempi andati o dei suoi figli da bambini che ne combinavano di tutti i colori, e <b>la Teresa amava molto starla ad ascoltare</b>" si legge a corredo delle immagini. E ancora: "La mia amava le storie, era una lettrice di romanzi di qualità, amava il grande cinema ('Via col vento il suo preferito) e a sua volta era una buona narratrice di aneddoti e di cose divertenti". Nel messaggio di saluto, Jovanotti conclude con un pensiero rivolto anche a chi non c'è più, riferendosi forse al fratello Umberto e al padre Mario:
+<b>"So con chi sei, e so che sei contenta"</b>. Il post è stato ricondiviso anche da Teresa, che nelle sue storie Instagram ha scritto semplicemente: <b>"Auguri nonna"</b>.</p>
+</body>
+</html>
