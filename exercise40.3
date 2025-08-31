@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    * {box-sizing: border-box;
+      }
+      body {padding: 0px;
+            margin: 0px;
+            font-family:sans-serif;
+            background-color: black;
+           }
+    h1{
+      color: gainsboro;
+      text-align: center;
+      
+    }
+    .container1{background-color:transparent;
+      display: flex;
+      height: 300px;
+      width: 100%;
+      gap:4px;
+    }
+
+    .box1{flex:1;
+      margin-bottom:4px;
+      position: relative;
+    }
+
+    .box2{
+      flex:1;
+       margin-bottom:4px;
+        position: relative;
+    }
+    
+    .container2{
+      background-color:transparent;
+      display: flex;
+      height: 300px;
+      width: 100%;
+      gap:4px;
+    }
+    
+    .box3{
+      flex:1;
+       position: relative;
+          }
+          
+    .box4{
+      flex:1;
+       position: relative;
+    }
+
+    img{
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+
+    .text1,.text2,.text3,.text4{
+       height: 100%;
+       width:100%;
+       position: absolute;
+       padding: 95px;
+       background:rgba(0, 0,0,0.6);
+       top: 0px; 
+       left: 0px;         
+       color:gainsboro;
+       transition: all 0.6s;
+       opacity: 0;
+       font-size: medium;
+       border-radius: 8px;
+    }
+
+      .text1:hover,.text2:hover,.text3:hover,.text4:hover{
+        opacity:1;
+      }
+        
+      .text1,.text2,.text3,.text4 p{
+        border-top: 1px solid white;
+         border-bottom: 1px solid white;
+      }
+
+    .link{
+      text-decoration: none;
+      color: pink;
+      font:bolder;
+     }
+     
+  </style>
+</head>
+<body>
+  <h1> Flex layout</h1>
+  <div class="container1">
+
+  <!--prima container inzia qui-->
+    <div class="box1">
+       <img src="https://burratahouse.com/wp-content/uploads/nc/articles/Italian_Food_9ee0b58d-018f-4c37-a7b3-4a677b75f66f.jpg" alt="italian food">
+       <div class="text1">
+        <h2>La dieta può aspettare… gli spaghetti no
+        </h2>
+        <p>Un piatto simbolo della cucina italiana, con i tipici ingredienti del Bel Paese: spaghetti al pomodoro e basilico per la ricetta clicca <a href="https://ricette.giallozafferano.it/Spaghetti-al-pomodoro.html" class="link">qui</a>
+        </p>
+      </div>
+     
+    </div>
+
+   <div class="box2"> 
+     <img src="https://www.foodandwine.com/thmb/Pm_0Skm7gjLkL6VFQfORjj4pnKs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Ricotta-Polpette-FT-RECIPE0723-420aee27e58a410080366740cd1aa08c.jpg">
+      <div class="text2">
+        <h2>La vita è migliore con le polpette.
+        </h2>
+        <p>Un piatto simbolo della cucina italiana, con i tipici ingredienti del Bel Paese: spaghetti al pomodoro e basilico per la ricetta clicca <a href=https://ricette.giallozafferano.it/Spaghetti-al-pomodoro.html class="link">qui</a></p>
+      </div>
+     </div>
+  <!--prima container termina qiu-->
+
+  </div>
+
+   <div class="container2">
+  <!--secondo container inzia qui-->
+    <div class="box3"> 
+      <img src="https://images.getbento.com/accounts/de23756cf6b256525b2273c241eabc4e/media/images/2387Iris_MacKinnon_Photography_Scampo_Liberty_Hotel_Boston_Menu_Dinner_Cocktails-33.jpg?w=1200&fit=max&auto=compress,format&cs=origin">
+       <div class="text3">
+        <h2>Prosciutto: il gusto della tradizione
+        </h2>
+        <p>Il prosciutto crudo ha principalmente carne di suino (coscia) e sale come ingredienti principali per la ricetta clicca <a href="https://www.giallozafferano.com/recipes/Caprese-Chicken-Saltimbocca.html" class="link">qui</a></p>
+      </div>
+    </div>
+
+   <div class="box4">
+      <img src="https://media.assettype.com/homegrown%2Fimport%2Fimg%2Fbook%2Fzudiopwxcx-1497345882.jpg?w=480&auto=format%2Ccompress&fit=max">
+       <div class="text4">
+        <h2>La pizza è sempre una buona idea
+        </h2>
+        <p>La pizza margherita, insieme alla pizza marinara, è una delle versioni più semplici e amate della pizza! per la ricetta clicca <a href="https://ricette.giallozafferano.it/Pizza-Margherita.html" class="link">qui</a></p>
+      </div>
+  </div>
+  <!--secondo container termina qiu-->
+
+  </div>
+  
+</body>
+</html>
