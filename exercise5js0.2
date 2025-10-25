@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perimetro-quadrato</title>
+   
+</head>
+<body>
+    
+    <h2>Calcolo del perimetro del quadrato con js</h2>
+<ul>
+    <li>Lato 1= 5cm</li>
+    <li>Lato 2= 5cm</li>
+    <li>Lato 3= 5cm</li>
+    <li>Lato 4= 5cm</li>
+</ul>
+
+<script>
+    var lato_a = 5; 
+    var lato_b = 5; 
+    var lato_c = 5; 
+    var lato_d = 5; 
+
+    function  perimetro(){
+        var totale = lato_a+lato_b+lato_c+lato_d;
+        return totale;
+    }
+     document.write("perimetro del quadrato:" + perimetro()+ "cm" );
+
+
+
+</script>
+
+<h2>l'area del quadrato</h2>
+<ul>
+    <li>Lato 1= 20cm</li>
+    <li>Lato 2= 20cm</li>
+    
+</ul>
+
+<script>
+
+    var lato1= 20;
+    var lato2=20;
+
+   function area (){
+        var totale = lato1+lato2;
+        return totale;
+    }
+     document.write("l'area del quadrato:" + area ()+ "cm" );
+
+ </script>
+
+
+<h2>il perimetro del triangolo</h2>
+<ul>
+    <li>Lato 1= 3cm</li>
+    <li>Lato 2= 3cm</li>
+    <li>Lato 3= 3cm</li>
+    
+</ul>
+
+<script>
+
+    var lato1=3;
+    var lato2=3;
+    var lato3=3;
+
+   function triangolo (){
+        var totale = lato1+lato2+lato3;
+        return totale;
+    }
+     document.write("il perimetro del triangolo:" + triangolo ()+ "cm" );
+
+ </script>
+
+
+
+<h2>l'area del cerchio</h2>
+<ul>
+    <li>raggio=5</li>
+    <li> π=3.14</li>
+    
+</ul>
+
+<script>
+
+    var raggio=5;
+    var π=3.14;
+
+    function cerchio(){
+        var totale = π * raggio;
+        return totale;
+    }
+     document.write(" area del cerchio:" + cerchio() );
+</script>
+
+<h2>Il perimetro di un rettangolo</h2>
+
+<ul>
+    <li> altezza=8m</li>
+    <li> base=10m</li>
+   
+    
+</ul>
+ 
+
+<script>
+
+    var altezza=8;
+    var base=10;
+
+    function rettangolo(){
+        var totale = (altezza+base)*2 ;
+        return totale;
+    }
+     document.write(" perimetro di un rettangolo:" + rettangolo()+ "m" );
+</script>
+</body>
+</html>
