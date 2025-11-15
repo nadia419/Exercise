@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+     *{
+        font-family: sans-serif;
+    }
+    p{
+        font-weight: bold;
+    }
+
+    </style>
+</head>
+<body>
+
+    <h1>Calcolo dell'area del perimetro</h1>
+    <p>pensiamo che la forma su cui stiamo lavorando sia un triangolo</p>
+
+    <p id="primo"></p>
+    <p id="secondo"></p>
+    <h1>l'area e il perimetro del cerchio</h1>
+    
+    <a href="js-page1.html" style="text-decoration: none;"><strong>Per vedere l'area e il perimetro del cerchio clicca qui</strong></a>
+    
+
+    <script>
+        lato= Number(prompt("qual è il valore di un triangolo"," "));
+
+        var lato;
+
+      var perimetro = lato * 3;
+
+      document.getElementById("primo").innerHTML= " perimetro del un triangolo:"+ perimetro;
+
+   </script>
+
+
+<h1>Area e perimetro del triangolo equilatero</h1>
+   <p>lato = 5 <br>
+      Quindi se un lato è 5 cm, anche gli altri due sono 5 cm.
+   </p>
+
+    <script>
+
+      var lato=5;
+
+     function  area(){
+        var area = (Math.sqrt(3) / 4)*lato *lato;
+        return area;
+     } 
+
+     function  perimetro(){
+        var  perimetro = lato * 3;
+        return  perimetro;
+     } 
+
+      document.write(" Area del triangolo equilatero:" + area().toFixed(3)+ "cm<br>"); 
+      
+      document.write(" perimetro del triangolo equilatero:" + perimetro()+ "cm" );
+     
+     </script>
+
+     <h1>Area e perimetro del rettangolo</h1>
+
+     <script>
+        var altezza = 6;
+        var base = 3;
+
+        function area(){
+            var area = altezza * base;
+            return area;
+        }
+
+
+         function perimetro(){
+            var perimetro = 2 * (altezza + base);
+            return perimetro;
+        }
+
+        document.write(" area del rettangolo:" + area()+ "cm<br>" );
+        document.write(" Perimetro del rettangolo:" + perimetro()+ "cm" );
+     </script>
+
+
+       <h1>Area e perimetro di un pentagono equilater</h1>
+
+      <script>
+     
+     var lato= 4;
+     var apotema = lato * 0.688; 
+
+     function perimetro(){
+          var perimetro = 5 * lato;
+          return perimetro;
+     }
+      document.write(" aperimetro di un pentagono equilater:" + perimetro()+ "cm<br>" );
+
+
+      function area(){
+          var area = (apotema * perimetro()) / 2 ;
+          return area;
+     }
+      document.write(" area di un pentagono equilater:" + area().toFixed(3)+ "cm" );
+      </script>
+    
+</body>
+</html>
