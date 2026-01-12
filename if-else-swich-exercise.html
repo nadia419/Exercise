@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condizione if-else e swich dello script Java</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+    * {box-sizing: border-box;
+      }
+      body {padding: 0px;
+            margin: 0px;
+            font-family:sans-serif;
+      }
+
+
+     .navphoto {
+       height: 80px;  
+       width: auto;    
+     }
+     
+    .navbar{
+        height: 60px;
+        
+    }
+
+    .title{
+    font-size: 50px;
+    text-align: center;
+    color: #254235;
+   }
+
+   .subtitle{
+    font-size: 25px;
+    text-align: center;
+    color: #254235;
+   }
+
+     .inputbox{
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    padding-top: 60px;
+   }
+
+  
+    .inputbox  input {
+    width: 350px;            
+    height: 60px;             
+    padding: 10px; 
+  }
+
+  .button{
+     display: flex;
+     justify-content: center;
+     padding-top: 40px;
+  }
+
+  #risposta{
+   text-align: center;
+  }
+    </style>
+</head>
+<body>
+
+    <!--Questo è un esempio di documento js per ricreare le condizioni if ​​else.-->
+
+    <!--il codice bootstrap inizia qui-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #254235;">
+
+  <div class="container-fluid">
+
+    <!--Nav photo qui-->
+    <a class="navbar-brand" href="#"><img class="navphoto" src="https://dcassetcdn.com/design_img/3474170/735651/735651_19071385_3474170_485bebb8_image.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#"><strong>Home</strong></a>
+        <a class="nav-link" href="#"><strong>Caratteristiche</strong></a>
+        <a class="nav-link" href="#"><strong>Contatti</strong></a>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+<!--e finisce qui-->
+
+
+
+<p class="title">Informazioni sul visto per gli Emirati Arabi Uniti</p>
+<p class="subtitle">Prima di recarti negli Emirati Arabi Uniti, verifica i requisiti per il visto <br> e assicurati di avere un visto valido, se necessario.</p>
+ 
+<!--input tag 1-->
+<div class="inputbox">
+  
+  <label for="nazionalità"></label>
+<input list="countries" id="nazionalità" name="nazionalità" placeholder="Nazionalità">
+
+<datalist id="countries">
+  <option value="Italia">
+  <option value="USA">
+  <option value="UK">
+  <option value="India">
+  <option value="Bangladesh">
+</datalist>
+
+<!--input tag 2-->
+   <label for="residenza"></label>
+<input list="living-countries" id="residenza" name="residenza" placeholder="Residenza (facoltativo)">
+
+<datalist id="living-countries">
+  <option value="Italia">
+  <option value="USA">
+  <option value="UK">
+  <option value="India">
+  <option value="Bangladesh">
+</datalist>
+  
+</div>
+
+<div class="button">
+  <input type="submit" value="invia"  onclick=" visaProcess()">
+</div>
+ 
+<!--resulta-->
+
+<p id="risposta"></p>
+
+<script>
+  const input = document.getElementById("nazionalità");
+  const residence = document.getElementById("residenza");
+  const result = document.getElementById("risposta");
+  
+// If-else case
+
+  function visaProcess() {
+    if (input.value === "Italia") {
+      result.innerHTML= " I cittadini italiani non hanno bisogno di richiedere un visto prima di recarsi a Dubai; ricevono un visto gratuito all'arrivo, che consente un soggiorno fino a 90 giorni entro un periodo di 180 giorni per turismo o brevi viaggi di lavoro, a condizione che il loro passaporto abbia una validità residua di almeno sei mesi.";
+    }
+    
+    else if (input.value === "USA") {
+      result.innerHTML = "In genere, i cittadini statunitensi non hanno bisogno di richiedere un visto in anticipo per visitare Dubai (Emirati Arabi Uniti); possono ottenere un visto gratuito all'arrivo in aeroporto, che consente un soggiorno fino a 90 giorni, anche se necessitano di un passaporto valido, un biglietto di ritorno e fondi sufficienti. ";
+   }
+
+    else if (input.value === "UK") {
+      result.innerHTML = "I cittadini del Regno Unito con passaporto britannico non hanno bisogno di richiedere in anticipo un visto per visitare Dubai per turismo; ricevono un visto turistico gratuito all'arrivo, valido fino a 90 giorni in un periodo di 180 giorni, semplicemente apponendo un timbro all'immigrazione, ma devono essere in possesso di un passaporto valido per almeno sei mesi dall'arrivo. ";
+   }
+ 
+  else {
+      result.innerHTML ='Si prega di verificare i requisiti per il visto.<a href="https://u.ae/en/information-and-services/visa-and-emirates-id/do-you-need-an-entry-permit-or-a-visa-to-enter-the-uae" style="text-decoration: none;"> <strong> Qui </strong> </a>';
+    }
+
+
+    //Swich case
+
+     switch (residence.value) {
+      case "UK":
+        result.innerHTML += "<br>Residenti nel Regno Unito: potrebbero essere applicate condizioni speciali.";
+        break;
+
+      case "Italia":
+        result.innerHTML += "<br>La residenza in Italia non cambia le regole.";
+        break;
+
+      case "USA":
+        result.innerHTML += "<br>Residente negli Stati Uniti.";
+        break;
+
+      case "":
+       
+        break;
+
+         default:
+        result.innerHTML += "<br>Informazioni sulla residenza annotate.";
+  }
+  }
+
+
+ 
+</script>
+
+
+</body>
+</html>
